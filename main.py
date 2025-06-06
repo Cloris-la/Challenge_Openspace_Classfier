@@ -16,4 +16,3 @@ openspace.display()
 
 # Save all distribution as a excel file
 openspace.store("result.xlsx")
-
