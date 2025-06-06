@@ -19,7 +19,7 @@ class Openspace:
                 print("No more table.")
     
     def display(self) -> None:
-        for i,table in enumerate(self.tables.1):  #give numbers to tables from 1 and get each element too
+        for i,table in enumerate(self.tables,1):  #give numbers to tables from 1 and get each element too
             occupants = []
             for seat in table.seats:
                 if seat.occupant:
