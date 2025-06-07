@@ -23,9 +23,9 @@ class Seat:  # seat class
 
 
 class Table:
-    def __init__(self, capacity: int, seats):
+    def __init__(self, capacity: int):
         self.capacity = capacity
-        self.seats = [Seat() for i in range(capacity)]
+        self.seats =[Seat() for i in range(capacity)]
 
     def has_free_spot(self):
         for seat in self.seats:  # check free seat one by one
@@ -35,9 +35,9 @@ class Table:
                 False
 
     def assign_seat(self, name: str) -> bool:  # name is a string. If seat is not free,
-        for seat in seats:  # check all seats
+        for seat in self.seats:  # check all seats
             if seat.free:
-                seat.set.occupant(
+                seat.set_occupant(
                     name
                 )  # using the set_occupant method of Class Seat to assign this empty seat to a name
                 return True
